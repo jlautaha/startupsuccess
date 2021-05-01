@@ -35,7 +35,7 @@ def predict():
         if result == 1:
             output = "Get on this rocketship. THIS STARTUP IS GOING TO THE MOON!"
         else:
-            output = "It's unlikely this startup will succeed."
+            output = "It's unlikely this startup will succeed. 'Take that for DATA!'-Fiz"
     return output #render_template("index.html", prediction_text = output)
 
 if __name__ == '__main__':
