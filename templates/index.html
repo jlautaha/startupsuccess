@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<!-- <link rel="stylesheet" type="text/css" href="../static/css/styles.css"> -->
+	<!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}"> -->
+</head>
+<body>
+
+	<header>
+		<div class="container">
+		</div>
+        <h2>Predict the Success of a Startup</h2>
+        <h3>Our model will tell you whether or not a startup will achieve success ( success = IPO or acquisition).</h3>
+		
+	</div>
+	</header>
+
+	<div class="ml-container">
+
+		<form action="{{ url_for('predict')}}" method="POST">
+        <label for="funding">Funding (e.g. 10000000)</label><br>
+        <input type="text" id="funding" name="funding"><br>
+        <label for="rounds"># of Funding Rounds (e.g. 4)</label><br>
+        <input type="text" id="rounds" name="rounds"><br><br/>
+		<input type="submit" class="btn-info" value="Predict">
+		
+    </form>
+    <br>
+    <h4>{{ output }}</h4>
+		
+	</div>
+
+
+</body>
+</html>
