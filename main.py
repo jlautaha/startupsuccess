@@ -36,7 +36,7 @@ def predict():
             output = "Get on this rocketship. THIS STARTUP IS GOING TO THE MOON!"
         else:
             output = "It's unlikely this startup will succeed!"
-    return output #render_template("index.html", prediction_text = output)
+    return render_template("index.html", prediction_text = output)
 
 if __name__ == '__main__':
     app.run(host="127.0.0.1",port=8080,debug=True)

@@ -18,7 +18,7 @@
 
 	<div class="ml-container">
 
-		<form action="{{ url_for('predict')}}" method="POST">
+		<form action="/predict" method="POST">
         <label for="funding">Funding (e.g. 10000000)</label><br>
         <input type="text" id="funding" name="funding"><br>
         <label for="rounds"># of Funding Rounds (e.g. 4)</label><br>
@@ -27,7 +27,7 @@
 		
     </form>
     <br>
-    <h4>{{ output }}</h4>
+    <h4>{{ prediction_text }}</h4>
 		
 	</div>
 
