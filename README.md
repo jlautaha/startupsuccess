@@ -57,4 +57,34 @@ print(classification_report(y_test,y_pred))
 print(accuracy_score(y_test, y_pred))
 ```
 
+Output:
 
+![output](https://raw.githubusercontent.com/jlautaha/startupsuccess/main/model%20evaluation.PNG)
+
+**Note:** This is not the most precise model and I split the dataset to train and evaluate the model. However, I eventually used _the entire dataset_ to train the final model as seen below.
+
+---
+
+## **Building and Deploying Flask app with the model:**
+
+As I mentioned above, when building the model within the Flask app, I trained on the entire dataset to hopefully get a more precise model.
+
+```
+regressor = RandomForestClassifier(n_estimators=50, random_state=0)
+    regressor.fit(x, y)
+```
+
+I then took user inputs from the app, put it in array form in order to run a prediction, and return the prediction.
+
+```
+    if request.method == 'POST':
+        funding = request.form.get('funding')
+        rounds = request.form.get('rounds')
+        values = ([[funding, rounds]])
+        result = regressor.predict(values)[0]
+    return render_template("results.html", prediction = result)
+ ```
+ 
+ I then create, build and deploy through Google CLI. [Here](https://startup-success-312408.uk.r.appspot.com) is the resulting URL and below is the interface:
+ 
+ 
