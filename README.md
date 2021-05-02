@@ -2,7 +2,7 @@
 
 **Link to app:** [https://startup-success-312408.uk.r.appspot.com](https://startup-success-312408.uk.r.appspot.com)
 
-**Link to video demo:**
+**Link to video demo:** [https://www.youtube.com/watch?v=_5FrtyWGzJQ](https://www.youtube.com/watch?v=_5FrtyWGzJQ)
 
 **Linked to Kaggle dataset:** I used [this Kaggle dataset](https://www.kaggle.com/manishkc06/startup-success-prediction), but edited the CSV to only keep the columns funding_rounds, funding_total_usd, and status, and rename them rounds, funding and status.
 
