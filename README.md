@@ -87,4 +87,30 @@ I then took user inputs from the app, put it in array form in order to run a pre
  
  I then create, build and deploy through Google CLI. [Here](https://startup-success-312408.uk.r.appspot.com) is the resulting URL and below is the interface:
  
+ ![interface](https://raw.githubusercontent.com/jlautaha/startupsuccess/main/screenshot1.PNG)
+ 
+ Here's an example of predicting success:
+ 
+ ![successprediction](https://raw.githubusercontent.com/jlautaha/startupsuccess/main/screenshot2.PNG)
+ 
+ Here's an example of predicting failure:
+ 
+ ![failureprediction](https://raw.githubusercontent.com/jlautaha/startupsuccess/main/screenshot3.PNG)
+ 
+ ---
+ 
+ ## **Building Continuous Deployment:**
+ 
+ Follow [these steps](https://cloud.google.com/source-repositories/docs/quickstart-triggering-builds-with-source-repositories#before-you-begin) in order to build continuous deployment in Google Cloud.
+ 
+ Below shows trigger history indicating updates into our app.
+ 
+ ![tiggerpush](https://raw.githubusercontent.com/jlautaha/startupsuccess/main/push%20trigger.PNG)
+ 
+ ---
+ 
+  ## **Thanks for checking this out!**
+ 
+ 
+ 
  
